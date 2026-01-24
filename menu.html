@@ -1,0 +1,343 @@
+<header class="menu-header">
+    <div class="header-logo">
+        ÖZGÜR KAFE <span style="font-weight: 300; font-size: 0.7rem; color: #888; margin-left: 5px;">| EDİRNE</span>
+    </div>
+    <div class="header-search">
+      OYUN KEYFİNE LEZZETLİ DOKUNUŞLAR
+    </div>
+</header>
+
+<section class="hero-card">
+    <div class="hero-content">
+        <span class="hero-est">EST. 2004</span>
+        <h2 class="hero-title">Oyun & Eğlence</h2>
+        <p class="hero-desc">
+            Edirne'nin en keyifli oyun ortamı. Okey, Batak ve 101 heyecanına 
+            lezzetli ikramlarımızla eşlik ediyoruz.
+        </p>
+    </div>
+</section>
+
+<div class="category-tabs sticky-tabs">
+    <button class="tab-btn active" onclick="filterMenu('all', this)">Tümü</button>
+    <button class="tab-btn" onclick="filterMenu('sicak', this)">Çay & Kahve</button>
+    <button class="tab-btn" onclick="filterMenu('soguk', this)">Buz Gibi</button>
+    <button class="tab-btn" onclick="filterMenu('atistirmalik', this)">Yancılar</button>
+</div>
+
+<div class="product-grid">
+
+    <!-- SICAK İÇECEKLER -->
+    <div class="product-card" data-category="sicak">
+        <div class="card-image">
+            <img src="Cay.webp" alt="Çay" onerror="this.style.display='none'; this.parentElement.classList.add('placeholder'); this.nextElementSibling.style.display='flex';">
+            <div class="placeholder-text" style="display: none;">ÇAY</div>
+        </div>
+        <div class="card-info">
+            <div class="card-header">
+                <h3>Çay</h3>
+                <span class="price">15 TL</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-card" data-category="sicak">
+        <div class="card-image">
+            <img src="oralet.jpg" alt="Oralet" onerror="this.style.display='none'; this.parentElement.classList.add('placeholder'); this.nextElementSibling.style.display='flex';">
+            <div class="placeholder-text" style="display: none;">ORALET</div>
+        </div>
+        <div class="card-info">
+            <div class="card-header">
+                <h3>Oralet çeşitleri</h3>
+                <span class="price">15 TL</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-card" data-category="sicak">
+        <div class="card-image">
+            <img src="nescafe.jpg" alt="Nescafe" onerror="this.style.display='none'; this.parentElement.classList.add('placeholder'); this.nextElementSibling.style.display='flex';">
+            <div class="placeholder-text" style="display: none;">NESCAFE</div>
+        </div>
+        <div class="card-info">
+            <div class="card-header">
+                <h3>Nescafe</h3>
+                <span class="price">15 TL</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-card" data-category="sicak">
+        <div class="card-image">
+            <img src="türkKahvesi.jpg" alt="Türk Kahvesi" onerror="this.style.display='none'; this.parentElement.classList.add('placeholder'); this.nextElementSibling.style.display='flex';">
+            <div class="placeholder-text" style="display: none;">TÜRK KAHVESİ</div>
+        </div>
+        <div class="card-info">
+            <div class="card-header">
+                <h3>Türk Kahvesi</h3>
+                <span class="price">60 TL</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- SOĞUK İÇECEKLER -->
+    <div class="product-card" data-category="soguk">
+        <div class="card-image">
+            <img src="su.webp" alt="Su" onerror="this.style.display='none'; this.parentElement.classList.add('placeholder'); this.nextElementSibling.style.display='flex';">
+            <div class="placeholder-text" style="display: none;">SU</div>
+        </div>
+        <div class="card-info">
+            <div class="card-header">
+                <h3>Su</h3>
+                <span class="price">15 TL</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-card" data-category="soguk">
+        <div class="card-image">
+            <img src="ayran.jpg" alt="Ayran" onerror="this.style.display='none'; this.parentElement.classList.add('placeholder'); this.nextElementSibling.style.display='flex';">
+            <div class="placeholder-text" style="display: none;">AYRAN</div>
+        </div>
+        <div class="card-info">
+            <div class="card-header">
+                <h3>Ayran</h3>
+                <span class="price">40 TL</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-card" data-category="soguk">
+        <div class="card-image">
+            <img src="limonata.jpg" alt="Limonata" onerror="this.style.display='none'; this.parentElement.classList.add('placeholder'); this.nextElementSibling.style.display='flex';">
+            <div class="placeholder-text" style="display: none;">LİMONATA</div>
+        </div>
+        <div class="card-info">
+            <div class="card-header">
+                <h3>Limonata</h3>
+                <span class="price">30 TL</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-card" data-category="soguk">
+        <div class="card-image">
+            <img src="sadeSoda.png" alt="Sade Soda" onerror="this.style.display='none'; this.parentElement.classList.add('placeholder'); this.nextElementSibling.style.display='flex';">
+            <div class="placeholder-text" style="display: none;">SADE SODA</div>
+        </div>
+        <div class="card-info">
+            <div class="card-header">
+                <h3>Sade Soda</h3>
+                <span class="price">20 TL</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-card" data-category="soguk">
+        <div class="card-image">
+            <img src="meyveliSoda.png" alt="Meyveli Soda Çeşitleri" onerror="this.style.display='none'; this.parentElement.classList.add('placeholder'); this.nextElementSibling.style.display='flex';">
+            <div class="placeholder-text" style="display: none;">MEYVELİ SODA ÇEŞİTLERİ</div>
+        </div>
+        <div class="card-info">
+            <div class="card-header">
+                <h3>Meyveli Soda Çeşitleri</h3>
+                <span class="price">40 TL</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-card" data-category="soguk">
+        <div class="card-image">
+            <img src="cola.png" alt="Cola Fanta Sprite" onerror="this.style.display='none'; this.parentElement.classList.add('placeholder'); this.nextElementSibling.style.display='flex';">
+            <div class="placeholder-text" style="display: none;">COLA / FANTA / SPRITE</div>
+        </div>
+        <div class="card-info">
+            <div class="card-header">
+                <h3>Cola / Fanta / Sprite</h3>
+                <span class="price">40 TL</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-card" data-category="soguk">
+        <div class="card-image neon-glow">
+            <img src="monster.jpg" alt="Enerji İçeceği" onerror="this.style.display='none'; this.parentElement.classList.add('placeholder'); this.nextElementSibling.style.display='flex';">
+            <div class="placeholder-text" style="display: none;">BURN / MONSTER</div>
+        </div>
+        <div class="card-info">
+            <div class="card-header">
+                <h3>Burn / Monster</h3>
+                <span class="price">80 TL</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ATIŞTIRMALIKLAR -->
+    <div class="product-card" data-category="atistirmalik">
+        <div class="card-image">
+            <img src="çikolata.webp" alt="Çikolata Çeşitleri" onerror="this.style.display='none'; this.parentElement.classList.add('placeholder'); this.nextElementSibling.style.display='flex';">
+            <div class="placeholder-text" style="display: none;">ÇİKOLATA ÇEŞİTLERİ</div>
+        </div>
+        <div class="card-info">
+            <div class="card-header">
+                <h3>Çikolata Çeşitleri</h3>
+                <span class="price">40 TL</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-card" data-category="atistirmalik">
+        <div class="card-image">
+            <img src="gofret.webp" alt="Gofret" onerror="this.style.display='none'; this.parentElement.classList.add('placeholder'); this.nextElementSibling.style.display='flex';">
+            <div class="placeholder-text" style="display: none;">GOFRET</div>
+        </div>
+        <div class="card-info">
+            <div class="card-header">
+                <h3>Gofret</h3>
+                <span class="price">30 TL</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-card" data-category="atistirmalik">
+        <div class="card-image">
+            <img src="bisküvi.jpg" alt="Bisküvi Çeşitleri" onerror="this.style.display='none'; this.parentElement.classList.add('placeholder'); this.nextElementSibling.style.display='flex';">
+            <div class="placeholder-text" style="display: none;">BİSKÜVİ ÇEŞİTLERİ</div>
+        </div>
+        <div class="card-info">
+            <div class="card-header">
+                <h3>Bisküvi Çeşitleri</h3>
+                <span class="price">30 TL</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-card" data-category="atistirmalik">
+        <div class="card-image">
+            <img src="gong.webp" alt="Gong Çeşitleri" onerror="this.style.display='none'; this.parentElement.classList.add('placeholder'); this.nextElementSibling.style.display='flex';">
+            <div class="placeholder-text" style="display: none;">GONG ÇEŞİTLERİ</div>
+        </div>
+        <div class="card-info">
+            <div class="card-header">
+                <h3>Gong Çeşitleri</h3>
+                <span class="price">30 TL</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-card" data-category="atistirmalik">
+        <div class="card-image">
+            <img src="tost.png" alt="Tost Kaşarlı" onerror="this.style.display='none'; this.parentElement.classList.add('placeholder'); this.nextElementSibling.style.display='flex';">
+            <div class="placeholder-text" style="display: none;">TOST KAŞARLI</div>
+        </div>
+        <div class="card-info">
+            <div class="card-header">
+                <h3>Tost Kaşarlı</h3>
+                <span class="price">70 TL</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-card" data-category="atistirmalik">
+        <div class="card-image">
+            <img src="tost.png" alt="Tost Sucuklu" onerror="this.style.display='none'; this.parentElement.classList.add('placeholder'); this.nextElementSibling.style.display='flex';">
+            <div class="placeholder-text" style="display: none;">TOST SUÇUKLU</div>
+        </div>
+        <div class="card-info">
+            <div class="card-header">
+                <h3>Tost Sucuklu</h3>
+                <span class="price">80 TL</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-card" data-category="atistirmalik">
+        <div class="card-image">
+            <img src="tost.png" alt="Tost Karışık" onerror="this.style.display='none'; this.parentElement.classList.add('placeholder'); this.nextElementSibling.style.display='flex';">
+            <div class="placeholder-text" style="display: none;">TOST KARIŞIK</div>
+        </div>
+        <div class="card-info">
+            <div class="card-header">
+                <h3>Tost Karışık</h3>
+                <span class="price">100 TL</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-card" data-category="atistirmalik">
+        <div class="card-image">
+            <img src="kraker.jpg" alt="Çubuk Kraker Çeşitleri" onerror="this.style.display='none'; this.parentElement.classList.add('placeholder'); this.nextElementSibling.style.display='flex';">
+            <div class="placeholder-text" style="display: none;">ÇUBUK KRAKER ÇEŞİTLERİ</div>
+        </div>
+        <div class="card-info">
+            <div class="card-header">
+                <h3>Çubuk Kraker Çeşitleri</h3>
+                <span class="price">30 TL</span>
+            </div>
+        </div>
+    </div>
+
+     <div class="product-card" data-category="atistirmalik">
+        <div class="card-image">
+            <img src="kek.jpeg" alt="Kek Çeşitleri" onerror="this.style.display='none'; this.parentElement.classList.add('placeholder'); this.nextElementSibling.style.display='flex';">
+            <div class="placeholder-text" style="display: none;">KEK ÇEŞİTLERİ</div>
+        </div>
+        <div class="card-info">
+            <div class="card-header">
+                <h3>Kek Çeşitleri</h3>
+                <span class="price">30 TL</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-card" data-category="atistirmalik">
+        <div class="card-image">
+            <img src="kruvasan.jpg" alt="Kruvasan" onerror="this.style.display='none'; this.parentElement.classList.add('placeholder'); this.nextElementSibling.style.display='flex';">
+            <div class="placeholder-text" style="display: none;">KRUVASAN</div>
+        </div>
+        <div class="card-info">
+            <div class="card-header">
+                <h3>Kruvasan</h3>
+                <span class="price">40 TL</span>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<footer class="menu-footer">
+    <div class="footer-content">
+        <div class="footer-brand">
+            <div class="footer-logo">
+                <span class="icon">🎲</span> ÖZGÜR KAFE
+            </div>
+            <p class="footer-desc">
+                Edirne'nin en samimi oyun noktası. 
+                Dostlarınızla okey, batak ve sohbetin tadını çıkarın.
+            </p>
+            <div class="social-icons">
+    <a href="https://instagram.com" target="_blank" class="social-btn" aria-label="Instagram">
+        <svg width="18" height="18" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 4.7.038.852.172 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.281.11-.705.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.232-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+        </svg>
+    </a>
+</div>
+        </div>
+        <div class="footer-links">
+            <h4>HIZLI MENÜ</h4>
+            <ul>
+                <li><a href="#">Konum</a></li>
+            </ul>
+        </div>
+        <div class="footer-hours">
+            <h4>AÇIK</h4>
+            <div class="hour-row">
+                <span>Her Gün</span>
+                <span class="time">08:00 - 24:00</span>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <span>&copy; ÖZGÜR KAFE EDİRNE</span>
+    </div>
+</footer>
