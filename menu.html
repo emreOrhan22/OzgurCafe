@@ -18,6 +18,85 @@
     </div>
 </section>
 
+<section class="fun-zone" id="fun-zone">
+    <div class="fun-zone-header">
+        <span class="fun-zone-badge">YENİ</span>
+        <h2 class="fun-zone-title">Eğlence Köşesi</h2>
+        <p class="fun-zone-desc">Karar veremiyor musun? Çarkı çevir. Takım mı lazım? İsimleri gir, biz eşleştirelim.</p>
+    </div>
+
+    <div class="fun-tabs">
+        <button class="fun-tab active" data-panel="wheel-panel">🎯 Ne İçelim / Yiyelim?</button>
+        <button class="fun-tab" data-panel="matcher-panel">🃏 Takım Eşleştir</button>
+    </div>
+
+    <div id="wheel-panel" class="fun-panel active">
+        <div class="wheel-container">
+            <div class="wheel-pointer">▼</div>
+            <canvas id="wheel-canvas" width="320" height="320"></canvas>
+            <button class="spin-btn" id="spin-btn">ÇARKI ÇEVİR</button>
+        </div>
+
+        <div class="wheel-result hidden" id="wheel-result" aria-live="polite">
+            <span class="wheel-result-emoji">🎉</span>
+            <span class="wheel-result-label">Sana önerimiz</span>
+            <span class="wheel-result-name" id="wheel-result-name"></span>
+            <span class="wheel-result-price" id="wheel-result-price"></span>
+        </div>
+
+        <div class="wheel-controls">
+            <label class="wheel-label">Kategori</label>
+            <div class="wheel-category-btns">
+                <button class="wheel-cat-btn active" data-cat="all">Tümü</button>
+                <button class="wheel-cat-btn" data-cat="sicak">Çay & Kahve</button>
+                <button class="wheel-cat-btn" data-cat="soguk">Buz Gibi</button>
+                <button class="wheel-cat-btn" data-cat="atistirmalik">Yancılar</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="wheel-result-overlay hidden" id="wheel-result-overlay" role="dialog" aria-modal="true" aria-labelledby="wheel-overlay-title">
+        <div class="wheel-result-card">
+            <span class="wheel-result-emoji">🎉</span>
+            <span class="wheel-result-label">Sana önerimiz</span>
+            <h3 class="wheel-result-name" id="wheel-overlay-title"></h3>
+            <span class="wheel-result-price" id="wheel-overlay-price"></span>
+            <div class="wheel-overlay-actions">
+                <button class="wheel-result-close" id="wheel-result-close">Tamam!</button>
+                <button class="wheel-result-again" id="wheel-result-again">Tekrar Çevir</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="matcher-panel" class="fun-panel">
+        <p class="matcher-hint" id="matcher-hint">Tam 4 isim girilmeli. 2'şerli takımlar rastgele oluşturulur.</p>
+
+        <div class="matcher-input-row">
+            <input type="text" id="player-name-input" class="matcher-input" placeholder="İsim gir..." maxlength="20" autocomplete="off">
+            <button class="matcher-add-btn" id="add-player-btn">Ekle</button>
+        </div>
+
+        <ul class="player-list" id="player-list"></ul>
+
+        <div class="matcher-actions">
+            <button class="matcher-shuffle-btn" id="shuffle-btn" disabled>🎲 Takımları Kur</button>
+            <button class="matcher-clear-btn" id="clear-players-btn">Temizle</button>
+        </div>
+    </div>
+
+    <div class="wheel-result-overlay hidden" id="team-result-overlay" role="dialog" aria-modal="true" aria-labelledby="team-funny-message">
+        <div class="wheel-result-card team-result-card">
+            <span class="team-result-emoji" id="team-result-emoji">🃏</span>
+            <p class="team-funny-message" id="team-funny-message"></p>
+            <div class="team-result-list" id="team-result-list"></div>
+            <div class="wheel-overlay-actions">
+                <button class="wheel-result-close" id="team-result-close">Tamam!</button>
+                <button class="wheel-result-again" id="team-result-again">Tekrar Kur</button>
+            </div>
+        </div>
+    </div>
+</section>
+
 <div class="category-tabs sticky-tabs">
     <button class="tab-btn active" onclick="filterMenu('all', this)">Tümü</button>
     <button class="tab-btn" onclick="filterMenu('sicak', this)">Çay & Kahve</button>
